@@ -23,6 +23,10 @@ import co.edu.iudigital.service.iface.MovieService;
 @CrossOrigin("*")
 public class MovieController {
 	
+	public MovieController() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	@Autowired
 	private MovieService movieService;
 	

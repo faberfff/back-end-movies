@@ -29,18 +29,15 @@ import co.edu.iudigital.service.iface.MovieService;
 			
 	}
 
-
 	@Override
 	public void create(Movie movie) {
-		boolean existsGender = genderRepository.existsById(movie.getGenderId().getId());
-		if(existsGender) {
+		boolean existGender = genderRepository.existsById(movie.getGenderId().getId());
+		if(existGender) {
 			movie.setCreateAt(LocalDateTime.now());
 			movieRepository.save(movie);
 		}
 		
-		
 	}
-
 
 	@Override
 	public void edit(Movie movie, int movieId) {

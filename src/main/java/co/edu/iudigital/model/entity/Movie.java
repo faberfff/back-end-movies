@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 package co.edu.iudigital.model.entity;
 
 import java.io.Serializable;
